@@ -11,9 +11,7 @@
   <test name="Nopackage" >
     <classes>
        <class name="com.reportgn.test.Screenshot" />
+       <class name="com.reportgn.test.Screenshot" />
     </classes>
   </test>
-
-  
-
  </suite>
