@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Urika test suite" preserve-order="true">
+  <listeners>
+  <listener class-name="org.uncommons.reportng.HTMLReporter" />
+  <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  <!--  <listener class-name="org.uncommons.reportng.HTMLReporter" /> -->
+ </listeners>
+ 
+  <test name="Nopackage" >
+    <classes>
+       <class name="com.reportgn.test.Screenshot" />
+    </classes>
+  </test>
+
+  
+
+ </suite>
