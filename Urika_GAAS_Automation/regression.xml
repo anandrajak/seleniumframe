@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Test Suite">
+
+	<test name="Manage Data" verbose="2" preserve-order="true" enabled="true">
+		<!-- <groups> <run> <include name="smoke"></include> <exclude name="regression"></exclude> 
+			</run> </groups> -->
+		<classes>
+			<class name="com.yarcdata.tests.automation.managedata.AddDataWithURL" />
+			<class name="com.yarcdata.tests.automation.managedata.AddDatawithLocalFile" />
+			<class name="com.yarcdata.tests.automation.managedata.AddDataWithRawRdf" />
+		</classes>
+	</test>
+
+	<test name="Manage Rules" verbose="2" preserve-order="true" enabled="true">
+		<classes>
+			<class name="com.yarcdata.tests.automation.managerules.AddInferencingRules" />
+			<class name="com.yarcdata.tests.automation.managerules.ManageRulesPage" />
+		</classes>
+	</test>
+	<!-- <test name="Manage Databases" verbose="2" preserve-order="true" enabled="true">
+		<classes>
+			<class name="com.yarcdata.tests.automation.managedatabases.DatabasesPage" />
+		</classes>
+	</test> -->
+</suite>

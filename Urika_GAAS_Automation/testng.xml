@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- <suite name="Urika test suite" preserve-order="true"> <listeners> <listener 
+	class-name="org.uncommons.reportng.HTMLReporter" /> <listener class-name="org.uncommons.reportng.JUnitXMLReporter" 
+	/> </listeners> <suite-files> <suite-file path="smoke.xml"></suite-file> 
+	<suite-file path="regression.xml"></suite-file> </suite-files> </suite> -->
+
+<suite name="Urika Test Suite" preserve-order="true">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="Manage Data" verbose="2" preserve-order="true"
+		enabled="true">
+		<!-- <groups> <run> <include name="smoke"></include> <exclude name="regression"></exclude> 
+			</run> </groups> -->
+		<classes>
+			<class name="com.yarcdata.tests.automation.managedata.AddDataWithURL" />
+			<class
+				name="com.yarcdata.tests.automation.managedata.AddDatawithLocalFile" />
+			<class name="com.yarcdata.tests.automation.managedata.AddDataWithRawRdf" />
+		</classes>
+	</test>
+
+	<test name="Manage Rules" verbose="2" preserve-order="true"
+		enabled="true">
+		<classes>
+			<class
+				name="com.yarcdata.tests.automation.managerules.AddInferencingRules" />
+			<class name="com.yarcdata.tests.automation.managerules.ManageRulesPage" />
+		</classes>
+	</test>
+	<!-- <test name="Manage Databases" verbose="2" preserve-order="true" enabled="true"> 
+		<classes> <class name="com.yarcdata.tests.automation.managedatabases.DatabasesPage" 
+		/> </classes> </test> -->
+</suite>
